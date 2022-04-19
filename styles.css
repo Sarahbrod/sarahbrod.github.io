@@ -65,11 +65,17 @@ a {
     top: 350px;
 }
 
+.lottie-player{
+    padding: 200px 0px 0px 20px;
+
+}
+
 .top p {
     color:#252525;
     font-size: 20px;
     Padding: 60px 120px 60px 120px;
 }
+
 
 h2{
     font-weight: 100;
@@ -77,6 +83,7 @@ h2{
     text-align: left;
     padding: 5px 0 10px 100px;
 }
+
 section.projects{
     width: 100%;
     text-align: center; 
