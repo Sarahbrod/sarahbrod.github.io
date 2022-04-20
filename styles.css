@@ -129,13 +129,15 @@ width: 1220px;
 
 form {
     margin: 50px auto;
-    width: 90%;
+    width: 60%;
+    display: block;
 }
 
 .form-item {
     display: flex;
     justify-content: left;
     align-items: left;
+    flex-direction: column;
     padding: 5px;
 }
 
@@ -143,6 +145,7 @@ form {
     flex-basis: 150px;
     font-size: 22px;
 }
+
 
 .form-item input,
 .form-item textarea {
@@ -176,6 +179,10 @@ form {
     align-items: flex-start;
 }
 
+label {
+    cursor: default;
+}
+
 .contact{
     height: 200%;
 
@@ -185,26 +192,60 @@ form {
 
 }
 
+ul {
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    flex-direction: column;
+}
+
 .footer__copyright {
-    text-align: left;
-    padding: 2%;
+    position: relative;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .footer__nav-social{
+    flex-direction: row;
 
+}
+
+footer .section__content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .footer__nav-item{
     color: #252525;
     transition: color 0.2s;
     padding: 0 40px 40px 0;
+    flex-direction: row;
 }
 
-.social-icon{
-    
-}
-
-.social-icon:hover{
+.footer__nav-item:hover{
     color: #424CC2;
 }
 
