@@ -171,7 +171,9 @@ form {
 }
 
 .form-item button {
+    appearance: auto;
     width: 100px;
+    align-items: flex-start;
 }
 
 .contact{
@@ -179,16 +181,27 @@ form {
 
 }
 
-footer {
+.footer__container{
+
+}
+
+.footer__copyright {
     text-align: left;
-    display: inline-block;
     padding: 2%;
 }
 
-.social-icon{
+.footer__nav-social{
+
+}
+
+.footer__nav-item{
     color: #252525;
     transition: color 0.2s;
     padding: 0 40px 40px 0;
+}
+
+.social-icon{
+    
 }
 
 .social-icon:hover{
