@@ -70,11 +70,6 @@ a {
 }
 
 
-.lottie-player{
-    padding: 2%;
-
-}
-
 .title{
     font-weight: 300;
     font-family: 'Inter', sans-serif;
@@ -131,24 +126,29 @@ h3{
 
 .arrow{
     position: relative;
-    left: 80%;
     z-index: 1;
+    padding: 2%;
 
+}
+
+.about{
+    height: 140%;
+
+}
+
+.about-copy{
+    flex-flow: row wrap;
+    padding: 5% 18% 20% 44%; 
 }
 
 .about img{
-    width: 40%;
-    height: 400px;
+    width: 32%;
+    height: 5%;
     object-fit: cover;
+    padding: 5% 0 0 10%;
+    float: left; 
 
 }
-
-.final-image{
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    align-items: center;
-} 
 
 form {
     margin: 50px auto;
