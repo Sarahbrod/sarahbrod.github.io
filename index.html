@@ -11,12 +11,19 @@
 
 <body>
     <header>
-        <h1><a class="logo" href="index.html">SARAH
-                BRODRICK</a></h1>
-        <nav>
-            <a href="Work.html">work</a>
-            <a href="Contact.html">contact</a>
-        </nav>
+        <div class="container">
+            <div class="wrapper">
+                <a href="index.html" class="logo_a">
+                    <img src="Images/logo.svg" alt="Sarah's Logo" class="logo">
+                </a>
+                <nav id="myNav" class="navbar">
+                    <a href="Work.html" class="menu_item">Work</a>
+                    <a href="Contact.html" class="menu_item">Contact</a>
+                </nav>
+                <ion-icon name="flower-outline" class="nav_icon" onclick="navFunc()"></ion-icon>
+                </a>
+            </div>
+        </div>
     </header>
 
     <section class="head">
@@ -25,30 +32,36 @@
                 style="display: flex;align-items: center;height: 100%;flex-direction: row;width: 100%;overflow: hidden;">
                 <h2>Designer and developer devoted to crafting beautiful digital experiences focused on simplicity and
                     purpose.</h2>
-                <img id="image-1" src="Images/chillax.jpeg" alt="chillax bro"
-                    style="position: relative;z-index: -1;left: 50%;">
+                <!-- <img id="image-1" src="Images/chillax.jpeg" alt="chillax bro"> -->
+                <div class="top-animation">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_dZhysF.json"
+                        background="transparent" speed="1" loop autoplay
+                        alt="triangles with outlines looping around each other" class="animation">
+                    </lottie-player>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="work">
         <h2 class="title"> Selected works.</h2>
         <hr class="solid">
         <div class="projects">
             <div class="card">
                 <h3>01 Project</h3>
-                <img src="Images/glasshead.jpeg" />
+                <img src="Images/orange.png" />
                 <h2 class="sub-card-heading">
             </div>
 
             <div class="card">
                 <h3>02 Project</h3>
-                <img src="Images/vamp.jpeg" />
+                <img src="Images/grey.png" />
                 <h2 class="sub-card-heading"></h2>
             </div>
             <div class="card">
                 <h3>03 Project</h3>
-                <img src="Images/beach.jpeg" />
+                <img src="Images/red.png" />
                 <h2 class="sub-card-heading"></h2>
             </div>
         </div>
@@ -64,12 +77,12 @@
     <section class="about">
         <h2 class="title">About me.</h2>
         <hr class="solid">
-        <img src="Images/profile.png">
-        <div class="about-copy"> I'm a product designer working on various projects on a wide range of clients. My
-            skillset lies on creating branding packages & websites to deliver the full online experience for new and
-            also veteran businesses. <br><br> I'm a product designer working on various projects on a wide range of
-            clients. My skillset lies on creating branding packages & websites to deliver the full online experience
-            for new and also veteran businesses.
+        <img src="Images/port-1.jpeg" alt="Profile Picture">
+        <div class="about-copy"> Hi there 👋🏽 <br><br>I'm Sarah, a product designer, a marketing strategist and an
+            awkward
+            dancer...<br><br>
+            I am invested in technology and the creative industries, with a love of design. I create visual solutions
+            across platforms, putting the user first. In my free time, you'll find me learning to code and or...
         </div>
     </section>
 
