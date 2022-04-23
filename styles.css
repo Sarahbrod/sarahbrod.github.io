@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 
 html {
@@ -7,51 +6,98 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    margin-bottom: 5px;
-    height:32px;
-    font-family: 300px;
-    padding: 2% 8% 2% 8%;
+/* Navigation */
+
+header .container {
+    position: relative;
+    padding: 2% 10%;
 }
 
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+    overflow-x: hidden;
+    
+}
 
-nav, h1{
-    transition: color 0.2s;
-    display: inline; 
-    font-size: 28px;
-    font-weight: 300px;
+header .logo {
+    width: 150px;
+}
+
+header .logo_a {
+    border-bottom: none;
+    margin-right: auto;
+}
+
+.nav_icon {
     color: #333333;
-    font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
-nav,h1:hover{
-    color: #424CC2;
+img.logo{
+width: 16%;
 }
 
-nav{
-    float: right; 
-    transition: color 0.2s;
+.navbar {
+    display: none;
 }
 
-nav:hover{
-    color: #424CC2;
-}
-
-a {
-    color: #333333;
-    padding: 8px;
-    text-transform: uppercase;
-    font-size: 16px;
-    text-decoration:none;
-    font-family: 'Inter', sans-serif;
-}
-
-.head {
+.navbarresponsive {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 680px;
-    text-align: left;
+    background-color: #f9fafb;
+    z-index: 999;
 }
 
+.menu_item {
+    padding: 1rem 0;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_item:hover {
+    background-color: #777777;
+    color: #fff;
+}
+.active {
+    color: #333333;;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 640px) {
+    .nav_icon {
+    display: none;
+    }
+    .navbar {
+    display: flex;
+    position: relative;
+    gap: 1.6rem;
+    }
+    .menu_item {
+    color: #1f1f1f;
+    }
+    .menu_item:hover {
+    color: #777777;
+    background: none;
+    }
+    .active {
+    color: #333333;;
+    font-weight: 500;
+    }
+}
+
+
+/* home page */
 .top h2 {
     color:#333333;
     font-size: 62px;
@@ -62,13 +108,28 @@ a {
     top: 28%;
 }
 
+.animation{
+    width: 35%; 
+    height: 35%;
 
-#image-1{
+}
+
+.top-animation{
+    position: relative;
+    left: 56%;
+    z-index: -1;
+
+}
+
+/* #image-1{
     position: relative;
     left: 50%;
     z-index: -1;
-}
+} */
 
+.work{
+    height: 700px;
+}
 
 .title{
     font-weight: 300;
@@ -125,32 +186,83 @@ h3{
 }
 
 .arrow{
-    position: relative;
     z-index: 1;
-    padding: 2%;
+    padding: 0 15% 0 0;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .about{
-    height: 140%;
+    height: 780px;
 
 }
 
 .about-copy{
     flex-flow: row wrap;
-    padding: 5% 18% 20% 44%; 
+    padding: 12% 20% 20% 46%; 
     color: #333333;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
 }
 
 .about img{
+    height: 460px;
     width: 32%;
-    height: 5%;
     object-fit: cover;
     padding: 5% 0 0 10%;
     float: left; 
 
 }
+
+.projects{
+    padding: 3% 20% 5% 9%;
+
+}
+
+
+/* work/projects page */
+
+.work-projects{
+    height: 860px;
+    padding: 5% 10% 5% 10%; 
+
+}
+h3{
+    font-weight: 200;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card{
+    width:26%;
+    padding: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 0 5px 20px;
+    height: 260px;
+}
+
+.project-card img{
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+}
+
+.project-card{
+    display: inline-block;
+}
+
+.project-card h2{
+    font-size: 16px; 
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+/* contact page */
 
 form {
     margin: 50px auto;
@@ -217,6 +329,8 @@ label {
 
 }
 
+/* footer */
+
 footer{
         display: flex;
         flex-direction: row;
@@ -231,6 +345,7 @@ footer{
 ul li{
     list-style: none;
     display: inline;
+    border: none;
 } 
 
 .footer__copyright {
@@ -243,13 +358,48 @@ ul li{
 .social-icon{
     color: #333333;
     transition: color 0.2s;
-    padding: 10px;
-    margin-right: 5px;
-    
+    margin: 0 10px;
+    text-decoration: none;
+
+
 }
 
 .social-icon:hover{
-    color: #424CC2;
+    color: #777777;
+}
+
+
+
+/*** Media Queries Below ***/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 320px) { 
+    .top-animation{
+        left: 0;
+        z-index: 0;
+        height: 3;
+    }
+    
+    .top h2 {
+        color:#333333;
+        font-size: 32px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 5% 0 5%;
+        top: 28%;
+    }
+    
+    
+    
+
+@media screen and (min-width: 640px){
+
+.navbar {
+    display: flex;
+    position: relative;
+    gap: 1.6rem;
+}
 }
 
 
