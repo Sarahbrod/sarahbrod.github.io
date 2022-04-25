@@ -1,86 +1,622 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+html {
+    background: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-<body>
-    <header>
-        <div class="container">
-            <div class="wrapper">
-                <a href="index.html" class="logo_a">
-                    <img src="Images/logo.svg" alt="Sarah's Logo" class="logo">
-                </a>
-                <nav id="myNav" class="navbar">
-                    <a href="Work.html" class="menu_item">Work</a>
-                    <a href="Contact.html" class="menu_item">Contact</a>
-                </nav>
-                <ion-icon name="flower-outline" class="nav_icon" onclick="navFunc()"></ion-icon>
-                </a>
-            </div>
-        </div>
-    </header>
+/* Navigation */
 
-    <div class="contact">
-        <h2 class="title">Say hello.</h2>
-        <hr class="solid">
-        <div class="hello-copy">Looking to start a new project or just want to say hi? Send me an email and I’ll do my
-            best to reply within 24 hrs!<br>If contact forms aren’t your thing... send me an email at hello@sarah.design
-        </div>
-        </section>
-        <section class="contact">
-            <div class="about">
-                <form action="https://formspree.io/f/xayvpydb" method="post">
-                    <div class="form-item">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                    </div>
+header .container {
+    position: relative;
+    padding: 2% 9%;
+}
 
-                    <div class="form-item">
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="email">
-                    </div>
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+    overflow-x: hidden;
+    
+}
 
-                    <div class="form-item">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
-                    </div>
-                    <div class="form-item">
-                        <button type="submit">Send!</button>
-                    </div>
-                </form>
+header .logo {
+    width: 50px;
+}
 
-            </div>
-    </div>
-    </section>
+header .logo_a {
+    border-bottom: none;
+    margin-right: auto;
+}
 
-    <hr class="solid">
-    <footer>
-        <div class="footer__copyright"> &#169; Sarah Brodrick 2022</div>
+.navbar {
+    gap: 1.6rem;
+    display: inline;
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-end;
+} 
 
-        <ul class="footer__nav-social">
-            <li class="footer__nav-item"> <a class="social-icon"
-                    href="https://www.linkedin.com/in/sarah-brodrick-540219115/" target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-            <li class="footer__nav-item"><a class="social-icon" href="https://www.instagram.com/sj.designs__/?hl=en"
-                    target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-            <li class="footer__nav-item"><a class="social-icon" href="https://github.com/Sarahbrod" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a></li>
-        </ul>
+.menu_item {
+    flex-direction: row;
+    padding: 1rem 0;
+    margin: 4%;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </div>
-        <footer>
-</body>
+.active {
+    color: #333333;;
+    font-weight: 500;
+}
 
-</html>
+/* home page */
+
+.head{
+    height: 630px;
+
+} 
+
+.text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top h2 {
+    color:#333333;
+    font-size: 62px;
+    font-weight: 100;
+    font-family: 'Italiana', serif;
+    position: absolute;
+    padding: 0 39% 0 9%;
+    top: 28%;
+}
+
+.animation{
+    width: 35%; 
+    height: 35%;
+
+}
+
+.top-animation{
+    position: relative;
+    left: 56%;
+    z-index: -1;
+
+}
+
+/* work section */
+
+.work{
+    height: 700px;
+}
+
+.title{
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 10%;
+    color: #333333;
+    margin-bottom: 3%;
+}
+
+hr.solid {
+    border-top: 1px solid #333333;
+    width: 80%;
+    }
+
+.projects{
+    padding: 3% 20% 5% 9%;
+
+}
+
+h3{
+    font-weight: 200;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+.card{
+    width:26%;
+    padding: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 0 5px 20px;
+    height: 260px;
+}
+
+.card img{
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+}
+
+.card{
+    display: inline-block;
+}
+
+.card h2{
+    font-size: 16px; 
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+.arrow{
+    z-index: 1;
+    padding: 0 15% 0 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+/* work/projects page */
+
+.work-projects{
+    height: 600px;
+    padding: 5% 10% 5% 10%; 
+
+}
+h3{
+    font-weight: 200;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+.card{
+    width:26%;
+    padding: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 5px 20px;
+    height: 260px;
+}
+
+.card img{
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+}
+
+.card h2{
+    font-size: 16px; 
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+/* about section */
+
+.about{
+    height: 760px;
+
+}
+
+.about-copy{
+    flex-flow: row wrap;
+    padding: 12% 20% 20% 46%; 
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about img{
+    height: 460px;
+    width: 32%;
+    object-fit: cover;
+    padding: 5% 0 0 10%;
+    float: left; 
+
+}
+
+.projects{
+    padding: 3% 20% 5% 9%;
+
+}
+
+/* contact page */
+
+.hello-copy{
+    float: left;
+    padding: 5% 20% 5% 10%;
+    font-size: 32px;
+    color: #333333;
+    line-height: 150%;
+}
+
+form {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid #333333;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid #000000;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 1px solid #333333;
+    background-color: #F4F4F4;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-item button:hover {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #bebebe;
+    
+}
+
+.form-item button {
+    width: 100px;
+}
+
+
+label {
+    cursor: default;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact{
+    height: 680px;
+}
+
+
+
+
+/* footer */
+
+footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+}
+
+.footer__nav-social{
+    padding: .5% 0 0 16%;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    border: none;
+} 
+
+.footer__copyright {
+    font-family: 'Inter', sans-serif;
+    padding: 2% 5% 5% 10%; 
+    color: #333333;
+    width: 40%;
+}
+
+.social-icon{
+    color: #333333;
+    transition: color 0.2s;
+    margin: 0 10px;
+    text-decoration: none;
+
+
+}
+
+.social-icon:hover{
+    color: #777777;
+}
+
+
+
+/*** Media Queries Below ***/
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
+    .menu_item {
+        flex-direction: row;
+        padding: 1rem 0;
+        margin: 4%;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        color: #333333;
+    }
+
+    .top-animation{
+    display: none;
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+        height: 70%; 
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+    }
+
+.head{
+    height: 500px;
+
+}
+
+    .top h2 {
+        color:#333333;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 10% 0 9%;
+        top: 24%;
+    }
+
+    h3{
+        font-weight: 200;
+        font-size: 16px;
+        margin: 10px 0;
+        color: #333333;
+        font-family: 'Inter', sans-serif;
+    }
+
+.work{
+    height: 940px;
+    padding: 0; 
+
+}
+    .card{
+        width:100%;
+        padding: 0;
+        display:block;
+        align-items: center;
+        margin: 0 5px 0px;
+        height: 260px;
+    }
+
+    .card img{
+    height: 200px;
+    display: block;
+}
+.projects{
+    padding: 2% 10% 2% 10%;
+
+}
+.arrow{
+    display: none;
+}
+.about{
+    height: 600px;
+
+}
+
+.about-copy{
+    flex-flow: column;
+    padding: 12% 10% 20% 46%; 
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about img{
+    height: 430px;
+    width: 32%;
+    object-fit: cover;
+    padding: 5% 0 0 10%; 
+
+}
+.work-projects{
+    height: 800px;
+}
+    
+}
+    
+
+/* Tablets */
+@media (min-width: 768px) {
+    .head{
+        height: 630px;
+    
+    } 
+    
+    .top h2 {
+        color:#333333;
+        font-size: 24px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 5% 0 9%;
+        top: 28%;
+    }
+    
+    .animation{
+        width: 35%; 
+        height: 35%;
+    
+    }
+    
+    .top-animation{
+        position: relative;
+        left: 56%;
+        z-index: -1;
+    
+    }
+
+    .top h2 {
+        color:#333333;
+        font-size: 64px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: none;
+        padding: 0 5% 0 10%;
+        top: 28%;
+    }
+    .projects{
+        padding: 0 9%;
+    
+    }
+    .work{
+        height: 560px;
+    }
+    
+    .card{
+        width:27%;
+        padding: 10px;
+        display:inline-block;
+        vertical-align: middle;
+        height: 260px;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+    } 
+
+    .arrow{
+        display: none;
+    }
+
+    
+    .about{
+        height: 680px;
+    
+    }
+}
+
+/* large screens */
+@media screen and (min-width:992px) {
+    .head{
+        height: 630px;
+    
+    } 
+    
+    .top h2 {
+        color:#333333;
+        font-size: 62px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 39% 0 9%;
+        top: 28%;
+    }
+    
+    .animation{
+        width: 35%; 
+        height: 35%;
+    
+    }
+    
+    .top-animation{
+        position: relative;
+        left: 56%;
+        z-index: -1;
+    
+    }
+    .work{
+        height: 700px;
+    }
+    
+    .title{
+        font-weight: 300;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        text-align: left;
+        padding-left: 10%;
+        color: #333333;
+        margin-bottom: 3%;
+    }
+    
+    hr.solid {
+        border-top: 1px solid #333333;
+        width: 80%;
+        }
+    
+    .projects{
+        padding: 3% 20% 5% 9%;
+    
+    }
+    
+    h3{
+        font-weight: 200;
+        font-size: 22px;
+        margin: 10px 0;
+        color: #333333;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .card{
+        width:26%;
+        padding: 10px;
+        display:inline-block;
+        vertical-align: middle;
+        margin: 0 5px 20px;
+        height: 260px;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 160%;
+        object-fit: cover;
+    }
+    
+    .card{
+        display: inline-block;
+    }
+    
+    .card h2{
+        font-size: 16px; 
+        text-align: left;
+        font-weight: 200;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .arrow{
+        z-index: 1;
+        padding: 0 15% 0 0;
+        display: flex;
+        justify-content: flex-end;
+    
+    } 
+.about{
+    height: 760px;
+}
+}
