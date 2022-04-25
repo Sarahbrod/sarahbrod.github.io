@@ -3,14 +3,14 @@
 
 html {
     background: #F4F4F4;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Inter', sans-serif;
 }
 
 /* Navigation */
 
 header .container {
     position: relative;
-    padding: 2% 10%;
+    padding: 2% 9%;
 }
 
 header .wrapper {
@@ -23,7 +23,7 @@ header .wrapper {
 }
 
 header .logo {
-    width: 150px;
+    width: 50px;
 }
 
 header .logo_a {
@@ -31,73 +31,47 @@ header .logo_a {
     margin-right: auto;
 }
 
-.nav_icon {
-    color: #333333;
-    cursor: pointer;
-}
-
-img.logo{
-width: 16%;
-}
-
 .navbar {
-    display: none;
-}
-
-.navbarresponsive {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    display: flex;
-    flex-direction: column;
+    gap: 1.6rem;
+    display: inline;
     align-items: center;
-    width: 100%;
-    background-color: #f9fafb;
-    z-index: 999;
-}
+    display: inline-flex;
+    justify-content: flex-end;
+} 
 
 .menu_item {
+    flex-direction: row;
     padding: 1rem 0;
+    margin: 4%;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    color: #333333;
 }
 
-.menu_item:hover {
-    background-color: #777777;
-    color: #fff;
-}
 .active {
     color: #333333;;
     font-weight: 500;
 }
 
-@media screen and (min-width: 640px) {
-    .nav_icon {
-    display: none;
-    }
-    .navbar {
+/* home page */
+
+.head{
+    height: 630px;
+
+} 
+
+.text{
     display: flex;
-    position: relative;
-    gap: 1.6rem;
-    }
-    .menu_item {
-    color: #1f1f1f;
-    }
-    .menu_item:hover {
-    color: #777777;
-    background: none;
-    }
-    .active {
-    color: #333333;;
-    font-weight: 500;
-    }
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
 }
 
-
-/* home page */
 .top h2 {
     color:#333333;
     font-size: 62px;
@@ -121,11 +95,7 @@ width: 16%;
 
 }
 
-/* #image-1{
-    position: relative;
-    left: 50%;
-    z-index: -1;
-} */
+/* work section */
 
 .work{
     height: 700px;
@@ -193,8 +163,48 @@ h3{
 
 }
 
+
+/* work/projects page */
+
+.work-projects{
+    height: 600px;
+    padding: 5% 10% 5% 10%; 
+
+}
+h3{
+    font-weight: 200;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+}
+
+.card{
+    width:26%;
+    padding: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 5px 20px;
+    height: 260px;
+}
+
+.card img{
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+}
+
+.card h2{
+    font-size: 16px; 
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+/* about section */
+
 .about{
-    height: 780px;
+    height: 760px;
 
 }
 
@@ -220,62 +230,27 @@ h3{
 
 }
 
-
-/* work/projects page */
-
-.work-projects{
-    height: 860px;
-    padding: 5% 10% 5% 10%; 
-
-}
-h3{
-    font-weight: 200;
-    font-size: 22px;
-    margin: 10px 0;
-    color: #333333;
-    font-family: 'Inter', sans-serif;
-}
-
-.project-card{
-    width:26%;
-    padding: 10px;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 5px 20px;
-    height: 260px;
-}
-
-.project-card img{
-    width: 100%;
-    height: 160%;
-    object-fit: cover;
-}
-
-.project-card{
-    display: inline-block;
-}
-
-.project-card h2{
-    font-size: 16px; 
-    text-align: left;
-    font-weight: 200;
-    font-family: 'Inter', sans-serif;
-}
-
 /* contact page */
+
+.hello-copy{
+    float: left;
+    padding: 5% 20% 5% 10%;
+    font-size: 32px;
+    color: #333333;
+    line-height: 150%;
+}
 
 form {
     margin: 50px auto;
-    width: 60%;
-    display: block;
+    width: 90%;
 }
 
 .form-item {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-item label {
@@ -284,17 +259,15 @@ form {
     font-family: 'Inter', sans-serif;
 }
 
-
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
-    border: 1px solid #333333;
-    font-family: 'Inter', sans-serif;
+    border: 2px solid #333333;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-    border: 1px solid #0a0a0a;
+    border: 2px solid #000000;
 }
 
 .form-item input,
@@ -304,20 +277,19 @@ form {
     background-color: #F4F4F4;
     padding: 5px;
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
 }
 
 .form-item button:hover {
-    border: 2px solid #0a0a0a;
-    background-color: #0a0a0a;
-    color: #F4F4F4;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #bebebe;
+    
 }
 
 .form-item button {
-    appearance: auto;
     width: 100px;
-    align-items: flex-start;
 }
+
 
 label {
     cursor: default;
@@ -325,9 +297,11 @@ label {
 }
 
 .contact{
-    height: 200%;
-
+    height: 680px;
 }
+
+
+
 
 /* footer */
 
@@ -372,56 +346,277 @@ ul li{
 
 /*** Media Queries Below ***/
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 320px) { 
-    .top-animation{
-        left: 0;
-        z-index: 0;
-        height: 3;
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
+    .menu_item {
+        flex-direction: row;
+        padding: 1rem 0;
+        margin: 4%;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        color: #333333;
     }
+
+    .top-animation{
+    display: none;
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+        height: 70%; 
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+    }
+
+.head{
+    height: 500px;
+
+}
+
+    .top h2 {
+        color:#333333;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 10% 0 9%;
+        top: 24%;
+    }
+
+    h3{
+        font-weight: 200;
+        font-size: 16px;
+        margin: 10px 0;
+        color: #333333;
+        font-family: 'Inter', sans-serif;
+    }
+
+.work{
+    height: 940px;
+    padding: 0; 
+
+}
+    .card{
+        width:100%;
+        padding: 0;
+        display:block;
+        align-items: center;
+        margin: 0 5px 0px;
+        height: 260px;
+    }
+
+    .card img{
+    height: 200px;
+    display: block;
+}
+.projects{
+    padding: 2% 10% 2% 10%;
+
+}
+.arrow{
+    display: none;
+}
+.about{
+    height: 600px;
+
+}
+
+.about-copy{
+    flex-flow: column;
+    padding: 12% 10% 20% 46%; 
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about img{
+    height: 430px;
+    width: 32%;
+    object-fit: cover;
+    padding: 5% 0 0 10%; 
+
+}
+.work-projects{
+    height: 800px;
+}
+    
+}
+    
+
+/* Tablets */
+@media (min-width: 768px) {
+    .head{
+        height: 630px;
+    
+    } 
     
     .top h2 {
         color:#333333;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 100;
         font-family: 'Italiana', serif;
         position: absolute;
-        padding: 0 5% 0 5%;
+        padding: 0 5% 0 9%;
         top: 28%;
     }
     
+    .animation{
+        width: 35%; 
+        height: 35%;
     
+    }
     
-
-@media screen and (min-width: 640px){
-
-.navbar {
-    display: flex;
-    position: relative;
-    gap: 1.6rem;
-}
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+    .top-animation{
+        position: relative;
+        left: 56%;
+        z-index: -1;
     
-}
+    }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    body {
-        
+    .top h2 {
+        color:#333333;
+        font-size: 64px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: none;
+        padding: 0 5% 0 10%;
+        top: 28%;
+    }
+    .projects{
+        padding: 0 9%;
+    
+    }
+    .work{
+        height: 560px;
+    }
+    
+    .card{
+        width:27%;
+        padding: 10px;
+        display:inline-block;
+        vertical-align: middle;
+        height: 260px;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+    } 
+
+    .arrow{
+        display: none;
+    }
+
+    
+    .about{
+        height: 680px;
+    
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    body {     
+/* large screens */
+@media screen and (min-width:992px) {
+    .head{
+        height: 630px;
+    
+    } 
+    
+    .top h2 {
+        color:#333333;
+        font-size: 62px;
+        font-weight: 100;
+        font-family: 'Italiana', serif;
+        position: absolute;
+        padding: 0 39% 0 9%;
+        top: 28%;
     }
+    
+    .animation{
+        width: 35%; 
+        height: 35%;
+    
+    }
+    
+    .top-animation{
+        position: relative;
+        left: 56%;
+        z-index: -1;
+    
+    }
+    .work{
+        height: 700px;
+    }
+    
+    .title{
+        font-weight: 300;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        text-align: left;
+        padding-left: 10%;
+        color: #333333;
+        margin-bottom: 3%;
+    }
+    
+    hr.solid {
+        border-top: 1px solid #333333;
+        width: 80%;
+        }
+    
+    .projects{
+        padding: 3% 20% 5% 9%;
+    
+    }
+    
+    h3{
+        font-weight: 200;
+        font-size: 22px;
+        margin: 10px 0;
+        color: #333333;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .card{
+        width:26%;
+        padding: 10px;
+        display:inline-block;
+        vertical-align: middle;
+        margin: 0 5px 20px;
+        height: 260px;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 160%;
+        object-fit: cover;
+    }
+    
+    .card{
+        display: inline-block;
+    }
+    
+    .card h2{
+        font-size: 16px; 
+        text-align: left;
+        font-weight: 200;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .arrow{
+        z-index: 1;
+        padding: 0 15% 0 0;
+        display: flex;
+        justify-content: flex-end;
+    
+    } 
+.about{
+    height: 760px;
 }
-
- /* MASSIVE devices (large desktops, 1440px and up) */
-@media (min-width: 1440px) {
-    body {  
-    }
 }
