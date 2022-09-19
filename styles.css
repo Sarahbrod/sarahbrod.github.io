@@ -3,7 +3,7 @@
 
 html {
     background: #F4F4F4;
-     font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Navigation */
@@ -19,7 +19,7 @@ header .wrapper {
     align-items: center;
     padding: 2rem 0;
     overflow-x: hidden;
-    
+
 }
 
 header .logo {
@@ -37,10 +37,11 @@ header .logo_a {
     align-items: center;
     display: inline-flex;
     justify-content: flex-end;
-} 
+}
 
 .menu_item {
     flex-direction: row;
+    white-space: nowrap;
     padding: 1rem 0;
     margin: 4%;
     font-size: 18px;
@@ -52,18 +53,19 @@ header .logo_a {
 }
 
 .active {
-    color: #333333;;
+    color: #333333;
+    ;
     font-weight: 500;
 }
 
 /* home page */
 
-.head{
+.head {
     height: 630px;
 
-} 
+}
 
-.text{
+.text {
     display: flex;
     align-items: center;
     height: 100%;
@@ -73,22 +75,22 @@ header .logo_a {
 }
 
 .top h2 {
-    color:#333333;
-    font-size: 62px;
+    color: #333333;
+    font-size: 48px;
     font-weight: 100;
     font-family: 'Italiana', serif;
     position: absolute;
-    padding: 0 39% 0 9%;
+    padding: 0 5% 0 9%;
     top: 28%;
 }
 
-.animation{
-    width: 35%; 
+.animation {
+    width: 35%;
     height: 35%;
 
 }
 
-.top-animation{
+.top-animation {
     position: relative;
     left: 56%;
     z-index: -1;
@@ -97,11 +99,11 @@ header .logo_a {
 
 /* work section */
 
-.work{
+.work {
     height: 700px;
 }
 
-.title{
+.title {
     font-weight: 300;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
@@ -114,14 +116,14 @@ header .logo_a {
 hr.solid {
     border-top: 1px solid #333333;
     width: 80%;
-    }
+}
 
-.projects{
+.projects {
     padding: 3% 20% 5% 9%;
 
 }
 
-h3{
+h3 {
     font-weight: 200;
     font-size: 22px;
     margin: 10px 0;
@@ -129,33 +131,33 @@ h3{
     font-family: 'Inter', sans-serif;
 }
 
-.card{
-    width:26%;
+.card {
+    width: 26%;
     padding: 10px;
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
     margin: 0 5px 20px;
     height: 260px;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 160%;
     object-fit: cover;
 }
 
-.card{
+.card {
     display: inline-block;
 }
 
-.card h2{
-    font-size: 16px; 
+.card h2 {
+    font-size: 16px;
     text-align: left;
     font-weight: 200;
     font-family: 'Inter', sans-serif;
 }
 
-.arrow{
+.arrow {
     z-index: 1;
     padding: 0 15% 0 0;
     display: flex;
@@ -166,12 +168,13 @@ h3{
 
 /* work/projects page */
 
-.work-projects{
+.work-projects {
     height: 600px;
-    padding: 5% 10% 5% 10%; 
+    padding: 5% 10% 5% 10%;
 
 }
-h3{
+
+h3 {
     font-weight: 200;
     font-size: 22px;
     margin: 10px 0;
@@ -179,23 +182,23 @@ h3{
     font-family: 'Inter', sans-serif;
 }
 
-.card{
-    width:26%;
+.card {
+    width: 26%;
     padding: 10px;
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
     margin: 5px 20px;
     height: 260px;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 160%;
     object-fit: cover;
 }
 
-.card h2{
-    font-size: 16px; 
+.card h2 {
+    font-size: 16px;
     text-align: left;
     font-weight: 200;
     font-family: 'Inter', sans-serif;
@@ -203,36 +206,36 @@ h3{
 
 /* about section */
 
-.about{
+.about {
     height: 760px;
 
 }
 
-.about-copy{
+.about-copy {
     flex-flow: row wrap;
-    padding: 12% 20% 20% 46%; 
+    padding: 12% 20% 20% 46%;
     color: #333333;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
 }
 
-.about img{
+.about img {
     height: 460px;
     width: 32%;
     object-fit: cover;
     padding: 5% 0 0 10%;
-    float: left; 
+    float: left;
 
 }
 
-.projects{
+.projects {
     padding: 3% 20% 5% 9%;
 
 }
 
 /* contact page */
 
-.hello-copy{
+.hello-copy {
     float: left;
     padding: 5% 20% 5% 10%;
     font-size: 32px;
@@ -283,7 +286,7 @@ form {
     border: 1px solid #000000;
     background-color: #000000;
     color: #bebebe;
-    
+
 }
 
 .form-item button {
@@ -296,7 +299,7 @@ label {
     font-family: 'Inter', sans-serif;
 }
 
-.contact{
+.contact {
     height: 680px;
 }
 
@@ -305,31 +308,31 @@ label {
 
 /* footer */
 
-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.footer__nav-social{
+.footer__nav-social {
     padding: .5% 0 0 16%;
 
 }
 
-ul li{
+ul li {
     list-style: none;
     display: inline;
     border: none;
-} 
+}
 
 .footer__copyright {
     font-family: 'Inter', sans-serif;
-    padding: 2% 5% 5% 10%; 
+    padding: 2% 5% 5% 10%;
     color: #333333;
     width: 40%;
 }
 
-.social-icon{
+.social-icon {
     color: #333333;
     transition: color 0.2s;
     margin: 0 10px;
@@ -338,7 +341,7 @@ ul li{
 
 }
 
-.social-icon:hover{
+.social-icon:hover {
     color: #777777;
 }
 
@@ -362,26 +365,26 @@ ul li{
         color: #333333;
     }
 
-    .top-animation{
-    display: none;
+    .top-animation {
+        display: none;
     }
 
-    .text{
+    .text {
         display: flex;
         align-items: center;
-        height: 70%; 
+        height: 70%;
         flex-direction: row;
         width: 100%;
         overflow: hidden;
     }
 
-.head{
-    height: 200px;
+    .head {
+        height: 200px;
 
-}
+    }
 
     .top h2 {
-        color:#333333;
+        color: #333333;
         font-size: 24px;
         font-weight: 400;
         font-family: 'Italiana', serif;
@@ -390,7 +393,7 @@ ul li{
         top: 24%;
     }
 
-    h3{
+    h3 {
         font-weight: 200;
         font-size: 16px;
         margin: 10px 0;
@@ -398,67 +401,72 @@ ul li{
         font-family: 'Inter', sans-serif;
     }
 
-.work{
-    height: 940px;
-    padding: 0; 
-
-}
-    .card{
-        width:100%;
+    .work {
+        height: 940px;
         padding: 0;
-        display:block;
+
+    }
+
+    .card {
+        width: 100%;
+        padding: 0;
+        display: block;
         align-items: center;
         margin: 0 5px 0px;
         height: 260px;
     }
 
-    .card img{
-    height: 200px;
-    display: block;
-}
-.projects{
-    padding: 2% 10% 2% 10%;
+    .card img {
+        height: 200px;
+        display: block;
+    }
+
+    .projects {
+        padding: 2% 10% 2% 10%;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .about {
+        height: 600px;
+
+    }
+
+    .about-copy {
+        flex-flow: column;
+        padding: 12% 10% 20% 46%;
+        color: #333333;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .about img {
+        height: 430px;
+        width: 32%;
+        object-fit: cover;
+        padding: 5% 0 0 10%;
+
+    }
+
+    .work-projects {
+        height: 800px;
+    }
 
 }
-.arrow{
-    display: none;
-}
-.about{
-    height: 600px;
 
-}
-
-.about-copy{
-    flex-flow: column;
-    padding: 12% 10% 20% 46%; 
-    color: #333333;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-}
-
-.about img{
-    height: 430px;
-    width: 32%;
-    object-fit: cover;
-    padding: 5% 0 0 10%; 
-
-}
-.work-projects{
-    height: 800px;
-}
-    
-}
-    
 
 /* Tablets */
 @media (min-width: 768px) {
-    .head{
+    .head {
         height: 630px;
-    
-    } 
-    
+
+    }
+
     .top h2 {
-        color:#333333;
+        color: #333333;
         font-size: 24px;
         font-weight: 100;
         font-family: 'Italiana', serif;
@@ -466,71 +474,73 @@ ul li{
         padding: 0 5% 0 9%;
         top: 28%;
     }
-    
-    .animation{
-        width: 35%; 
+
+    .animation {
+        width: 35%;
         height: 35%;
-    
+
     }
-    
-    .top-animation{
+
+    .top-animation {
         position: relative;
         left: 56%;
         z-index: -1;
-    
+
     }
 
     .top h2 {
-        color:#333333;
-        font-size: 64px;
+        color: #333333;
+        font-size: 48px;
         font-weight: 100;
         font-family: 'Italiana', serif;
         position: none;
         padding: 0 5% 0 10%;
         top: 28%;
     }
-    .projects{
+
+    .projects {
         padding: 0 9%;
-    
+
     }
-    .work{
+
+    .work {
         height: 560px;
     }
-    
-    .card{
-        width:27%;
+
+    .card {
+        width: 27%;
         padding: 10px;
-        display:inline-block;
+        display: inline-block;
         vertical-align: middle;
         height: 260px;
     }
-    
-    .card img{
+
+    .card img {
         width: 100%;
         height: 140%;
         object-fit: cover;
-    } 
+    }
 
-    .arrow{
+    .arrow {
         display: none;
     }
 
-    
-    .about{
+
+    .about {
         height: 680px;
-    
+
     }
 }
 
 /* large screens */
 @media screen and (min-width:992px) {
-    .head{
+    .head {
         height: 630px;
-    
-    } 
-    
+
+    }
+
     .top h2 {
-        color:#333333;
+        color: #333333;
         font-size: 62px;
         font-weight: 100;
         font-family: 'Italiana', serif;
@@ -538,24 +548,25 @@ ul li{
         padding: 0 39% 0 9%;
         top: 28%;
     }
-    
-    .animation{
-        width: 35%; 
+
+    .animation {
+        width: 35%;
         height: 35%;
-    
+
     }
-    
-    .top-animation{
+
+    .top-animation {
         position: relative;
         left: 56%;
         z-index: -1;
-    
+
     }
-    .work{
+
+    .work {
         height: 700px;
     }
-    
-    .title{
+
+    .title {
         font-weight: 300;
         font-family: 'Inter', sans-serif;
         font-size: 40px;
@@ -564,59 +575,60 @@ ul li{
         color: #333333;
         margin-bottom: 3%;
     }
-    
+
     hr.solid {
         border-top: 1px solid #333333;
         width: 80%;
-        }
-    
-    .projects{
-        padding: 3% 20% 5% 9%;
-    
     }
-    
-    h3{
+
+    .projects {
+        padding: 3% 20% 5% 9%;
+
+    }
+
+    h3 {
         font-weight: 200;
         font-size: 22px;
         margin: 10px 0;
         color: #333333;
         font-family: 'Inter', sans-serif;
     }
-    
-    .card{
-        width:26%;
+
+    .card {
+        width: 26%;
         padding: 10px;
-        display:inline-block;
+        display: inline-block;
         vertical-align: middle;
         margin: 0 5px 20px;
         height: 260px;
     }
-    
-    .card img{
+
+    .card img {
         width: 100%;
         height: 160%;
         object-fit: cover;
     }
-    
-    .card{
+
+    .card {
         display: inline-block;
     }
-    
-    .card h2{
-        font-size: 16px; 
+
+    .card h2 {
+        font-size: 16px;
         text-align: left;
         font-weight: 200;
         font-family: 'Inter', sans-serif;
     }
-    
-    .arrow{
+
+    .arrow {
         z-index: 1;
         padding: 0 15% 0 0;
         display: flex;
         justify-content: flex-end;
-    
-    } 
-.about{
-    height: 760px;
-}
+
+    }
+
+    .about {
+        height: 760px;
+    }
 }
